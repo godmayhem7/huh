@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<header>
+  <section class="contain">
+    <img src="images/icon-menu.svg" class="menu" alt="">
+    <img src="images/logo.svg" class="logo" aria-hidden="true" alt="">
+    <nav>
+      <img src="images/icon-close.svg" class="cool" alt="">
+      <a>Collections</a>
+      <a>Men</a>
+      <a>Women</a>
+      <a>About</a>
+      <a>Contact</a>
+    </nav>  
+  </section>
+
+  <div class="hdr-left-sect">
+    <div>
+      <div>
+        <span class="cart-items-number">0</span>
+        <img id="cart" src="images/icon-cart.svg" class="cart"  aria-hidden="true" alt="">
+      </div>
+
+      <div id="cart-items" class="legendary-display">
+       <h5>cart</h5>
+       <h6 class="legendary-display">Your cart is empty</h6>
+       <div id="items" class="items">
+         <img class="cart-img" aria-hidden="true" src="images/image-product-1-thumbnail.jpg" alt="">
+         <div class="price-description" >
+          <p>
+            Fall Limited Edition Sneakers
+          </p>
+          <p>
+            $125.00 X <span id="times"></span> <span id="price" style="color: rgb(27, 26, 26); font-weight:800 ;"></span>
+          </p>
+         </div>
+         <img id="delete" src="images/icon-delete.svg" aria-hidden="true" alt="">
+       </div>
+
+       <button style="padding: 15px 75px; margin-left:28px; margin-bottom:8px; cursor: pointer;">check out</button>
+      </div>
+    </div>
+    
+    <img src="images/image-avatar.png" class="image-avatar" aria-hidden="true" alt="">
+  </div>
+
+</header>
+
+<div class="cio">
+  <main>
+    <section class="ser">
+      <img id="product-img" src="images/image-product-1.jpg" aria-hidden="true" class="product-1-img" alt="">
+      <div>
+        <img src="images/image-product-1-thumbnail.jpg" aria-hidden="true" class="thumbnails" alt="">
+        <img src="images/image-product-2-thumbnail.jpg" aria-hidden="true" class="thumbnails" alt="">
+        <img src="images/image-product-3-thumbnail.jpg" aria-hidden="true" class="thumbnails" alt="">
+        <img src="images/image-product-4-thumbnail.jpg" aria-hidden="true" class="thumbnails" alt="">
+      </div>
+    </section>
+      
+    <section class="descriptions">
+      <h4>Sneaker Company</h4>
+     
+    <h1>
+      Fall Limited Edition <br> Sneakers
+    </h1>
+    
+    <p>
+      These low-profile sneakers are your perfect casual wear <br> companion. Featuring a 
+      durable rubber outer sole, they’ll <br> withstand everything the weather can offer.
+    </p>
+    
+    <div class="price-container">
+      <div class="price-holder">
+        <h2> $125.00</h2>
+        <span class="rate">50%</span>
+      </div>
+       <b>$250.00</b>
+    </div>
+    
+    <div class="asd">
+      <div class="button-adder"><span class="minuser" id="minuser">-</span> <span class="stats">0</span> <span class="adder" id="adder">+</span></div>
+      <button id="btn-add-to-cart">Add to cart</button>
+    </div>
+       
+      
+    </section>
+    
+    </main>
+    
+    <footer>
+      <img src="images/icon-close.svg" class="close-icon" alt="">
+    <div class="footer-main">
+      <img src="images/icon-previous.svg" aria-hidden="true" class="previous" alt="">
+      <section class="image-products">
+        <img class="mg" src="images/image-product-1.jpg" alt="" aria-hidden="true">
+      </section>
+    
+      <section class="display-thumbnails">
+        <img class="mg-thumbnails" src="images/image-product-1-thumbnail.jpg" alt="" aria-hidden="true" >
+        <img class="mg-thumbnails" src="images/image-product-2-thumbnail.jpg" alt="" aria-hidden="true" >
+        <img class="mg-thumbnails" src="images/image-product-3-thumbnail.jpg" alt="" aria-hidden="true" >
+        <img class="mg-thumbnails" src="images/image-product-4-thumbnail.jpg" alt="" aria-hidden="true" >
+      </section>
+      <img src="images/icon-next.svg" aria-hidden="true" class="next" alt="">
+    </div>
+    </footer>
+</div>
+
+ <script src="code.js"></script>
+</body>
+</html>
